@@ -2,4 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'actiontext.css';
+
+trix-editor {
+  margin-bottom: var(--pico-spacing);
+}

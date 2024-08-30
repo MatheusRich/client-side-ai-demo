@@ -28,3 +28,15 @@
   padding: 0 !important;
   max-width: 100% !important;
 }
+
+@media (prefers-color-scheme: dark) {
+  trix-editor,
+  trix-toolbar .trix-button-group,
+  trix-toolbar .trix-button {
+    background-color: var(--pico-form-element-background-color) !important;
+    border-color: var(--pico-form-element-border-color) !important;
+  }
+  trix-toolbar .trix-button::before {
+    filter: invert(1);
+  }
+}
