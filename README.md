@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is part of [this blog post on how to run AI client-side](). It
+contains a few commits, which you can use to see the features being added
+incrementally.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Describing images automatically with AI](https://github.com/MatheusRich/client-side-ai-demo/commit/675c926254e119c918b69e0486c82f59125886dd)
+- [Reading articles for the user](https://github.com/MatheusRich/client-side-ai-demo/commit/6dd86969cdce45f685f795fd59a18d0718ae1584)
