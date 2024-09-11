@@ -1,10 +1,21 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @article %>
+<article data-controller="text-to-speech">
+  <header class="flex items-center gap-4">
+    <h1><%= @article.title %></h1>
 
-<div>
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to articles", articles_path %>
+    <%= button_tag "Read aloud", type: :button, class: "secondary", data: { action: "text-to-speech#play", text_to_speech_target: "trigger" } %>
+  </header>
 
-  <%= button_to "Destroy this article", @article, method: :delete %>
-</div>
+  <div data-text-to-speech-target="text">
+    <%= @article.content %>
+  </div>
+
+  <footer>
+    <%= link_to "Edit this article", edit_article_path(@article) %> |
+    <%= link_to "Back to articles", articles_path %>
+
+    <%= button_to "Destroy this article", @article, method: :delete %>
+  </footer>
+
+</article>

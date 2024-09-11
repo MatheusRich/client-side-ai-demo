@@ -5,4 +5,6 @@
 import { application } from "./application"
 
 import AutocaptionController from "./autocaption_controller"
+import TextToSpeechController from "./text_to_speech_controller"
 application.register("autocaption", AutocaptionController)
+application.register("text-to-speech", TextToSpeechController)
